@@ -9,25 +9,36 @@ export default {
  
  <header>
 
+    <div class="header-content">
      
-     <div class="header-container">
-         
-         <div class="logo">
-             <img src="../../public/Logo.jpg" alt="">
+        <div class="header-container">
+            
+            <div class="logo">
+                <img src="../../public/Logo.jpg" alt="">
+                </div>
+                
+                <div class="nav">
+                    <nav> 
+                        <a href="">Home</a>
+                        <a href="">About</a>
+                        <a href="">Academics</a>
+                        <a href="">Courses</a>
+                        <a href="">News</a>
+                    </nav>
+                </div>
+                
             </div>
             
-            <div class="nav">
-                <nav> 
-                    <a href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Academics</a>
-                    <a href="">Courses</a>
-                    <a href="">News</a>
-                </nav>
-            </div>
-            
-        </div>
-        <img src="../../public/img/jumbotron_1.PNG" alt="">
+
+                <img class="jumbs" src="../../public/img/02_Landing-Page.jpg" alt="">
+
+                <div class="content-img">
+                    <h1>Professional development for coaches and leaders</h1>
+                    <button>Learn More</button>
+                </div>
+
+
+    </div>
  </header>
 
 </template>
@@ -35,17 +46,48 @@ export default {
 
 <style scoped lang="scss">
 
+    @use '../scss/main.scss';
+
 header {
-    position: relative;
-    z-index: 1;
-    img{ 
-        position: absolute;
-        top: 0;
+    width: 100%;
+    .header-content{
+
+        position: relative;
+        z-index: 9;
+        height: 100%;
         width: 100%;
+        // overflow: hidden;
+        .jumbs{
+            height: 100%;
+            position: relative;
+            top: -75px;
+            width: 100%;
+
+            img{ 
+                position: absolute;
+                top: 0;
+            }
+        }
+    }
+    .content-img{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        h1{
+            font-family: 'PT Serif', serif;
+            font-size: 3.5vw;
+            font-weight: 100;
+            text-transform: capitalize;
+            text-align: center;
+            color: $dark-text;
+        }
     }
 }
+
 .header-container {
-    width: 98%;
+    width: calc(100% - 18px);
     height: 75px;
     display: flex;
     align-items: center;
@@ -54,16 +96,20 @@ header {
     position: relative;
     z-index: 1;
     img {
-        width: 25%;
+        width: 151px;
         margin-top: 44px;
         margin-left: 30%;
         z-index: 99;
         position: relative;
     }
 
+    div.nav{
+        margin-right: 100px;
+    }
+
     nav {
         list-style: none;
-        margin-right: 20px;
+        
         a {
         margin: 20px;
         text-decoration: none;
