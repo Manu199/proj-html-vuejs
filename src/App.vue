@@ -1,14 +1,19 @@
 <script>
-
-import Header from './components/header.vue';
-import Jumbotron from './components/Jumbotron.vue';
+import Header from './components/Header.vue';
+import Partner from './components/Partner.vue';
+import Courses from './components/Courses.vue';
+import Events from './components/Events.vue';
+import Blogs from './components/Blogs.vue';
 
 
 export default {
   name: 'App',
   components: {
     Header,
-    Jumbotron,
+    Partner,
+    Courses,
+    Events,
+    Blogs,
   }
 }
 </script>
@@ -17,7 +22,11 @@ export default {
 <template>
   
   <Header />
-  <Jumbotron />
+  <Partner />
+  <Courses />
+  <Events />
+  <Blogs />
+  
 </template>
 
 

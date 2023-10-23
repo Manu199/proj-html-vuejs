@@ -47,6 +47,7 @@ export default {
 <style scoped lang="scss">
 
     @use '../scss/main.scss';
+    @use '../scss/partials/variables';
 
 header {
     width: 100%;
@@ -74,14 +75,39 @@ header {
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
 
         h1{
-            font-family: 'PT Serif', serif;
-            font-size: 3.5vw;
+            font-family: 'Playfair Display', serif;
+            font-size: 3vw;
             font-weight: 100;
             text-transform: capitalize;
             text-align: center;
-            color: $dark-text;
+            color: #192836;
+            margin-top: -25px;
+        }
+
+        button{
+            padding: 17px 40px;
+            background-color: transparent;
+            color: #495057;
+            border: 1px solid #00000061;
+            font-family: sans-serif;
+            font-size: small;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-top: 50px;
+
+            &:hover{
+                background-color: #D74d52;
+                cursor: pointer;
+                color: white;
+                transition: 0.3s;
+                border: 1px solid #D74d52;
+            }
         }
     }
 }
@@ -104,18 +130,20 @@ header {
     }
 
     div.nav{
-        margin-right: 100px;
+        margin-right: 70px;
     }
 
     nav {
         list-style: none;
         
         a {
-        margin: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 18px;
         text-decoration: none;
-        color: black;
-        font-weight: 600;
+        color: #192836;
+        font-weight: 800;
         text-align: center;
+        font-size: small;
         }
     }
 }
