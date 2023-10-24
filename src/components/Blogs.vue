@@ -44,7 +44,7 @@ export default {
                 <div class="blogs-card">
                     
                     <div class="card-img">
-                        <img src="/public/img/news-3-2.jpg" alt="">
+                        <img src="/public/img/news-2-2.jpg" alt="">
                     </div>
                     <div class="blog-info">
                         
@@ -69,7 +69,7 @@ export default {
                 <div class="blogs-card">
                     
                     <div class="card-img">
-                        <img src="/public/img/news-3-2.jpg" alt="">
+                        <img src="/public/img/news-1-2.jpg" alt="">
                     </div>
                     <div class="blog-info">
                         
@@ -113,7 +113,7 @@ export default {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 1140px;
+        width: 1200px;
 
         h2 {
             font-size: 2rem;
@@ -132,8 +132,8 @@ export default {
             display: flex;
             justify-content: space-between;
             .blogs-card {
-                width: 32%;
-                box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.07);
+                width: 31.5%;
+                box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.07);   
 
 
                 img{

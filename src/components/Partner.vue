@@ -17,7 +17,7 @@ export default {
             <h4>Online Coaching</h4>
             <p>Lorem ipsum is simple dummy text of the print ing and typesetting has been the industrys</p>
         </div>
-        <div class="card">
+        <div class="card card-center">
             <img src="/svg/svg-1.svg" alt="">
             <h4>Consulation</h4>
             <p>Lorem ipsum is simple dummy text of the print ing and typesetting has been the industrys</p>
@@ -141,12 +141,34 @@ export default {
             }
         }
     }
+    
 
     .card-left{
         margin-left: 40px;
+        cursor: pointer;
+    }
+    .card-left:hover h4{
+        color: #D74d52;
+        transition: 0.3s;
+
+    }
+
+    .card-center {
+        cursor: pointer;
+        
+    }
+    .card-center:hover h4{
+        color: #D74d52;
+        transition: 0.3s;
     }
     .card-right{
         margin-right: 40px;
+        cursor: pointer;
+    }
+    .card-right:hover h4{
+        color: #D74d52;
+        transition: 0.3s;
+
     }
     .course-stats{
         display: flex;

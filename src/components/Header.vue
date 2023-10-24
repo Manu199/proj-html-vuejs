@@ -137,13 +137,21 @@ header {
         list-style: none;
         
         a {
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 18px;
-        text-decoration: none;
-        color: #192836;
-        font-weight: 800;
-        text-align: center;
-        font-size: small;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 18px;
+            text-decoration: none;
+            color: #192836;
+            font-weight: 800;
+            text-align: center;
+            font-size: small;
+            transition: 0.3s;
+
+            &:hover{
+                text-decoration: underline 2px;
+                text-decoration-color: #D74d52;
+                color: #D74d52;
+
+            }
         }
     }
 }
