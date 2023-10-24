@@ -230,7 +230,7 @@ export default {
                 img {
                     width: 40px;
                     height: 40px;
-                    background-color: white;
+                    background-color: #EBEBEB;
                     float: right;
                     margin-top: 7px;
                     margin-right: 40px;

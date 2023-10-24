@@ -145,14 +145,21 @@ header {
             text-align: center;
             font-size: small;
             transition: 0.3s;
+            position: relative;
 
-            &:hover{
-                text-decoration-line:underline;
-                text-decoration-color: #D74d52;
-                text-decoration-thickness: 2px;
-                text-decoration-skip-ink:calc(50% - 2px);
+            &:hover {
                 color: #D74d52;
 
+            }
+
+            &:hover::after{
+                content: "";
+                border-bottom: 2px solid #D74d52;
+                display: block;
+                position: absolute;
+                bottom: 0;
+                width: 50%;
+                right: 0;
             }
         }
     }
