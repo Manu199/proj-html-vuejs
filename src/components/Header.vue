@@ -1,6 +1,21 @@
 <script>
 export default {
-    name: 'Header'
+    name: 'Header',
+
+    data() {
+        return {
+        images: [
+            '../../public/img/02_Landing-Page.jpg',
+            '../../public/img/Images-2.jpg',
+        ],
+    };
+  },
+  computed: {
+    randomImage() {
+      const randomIndex = Math.floor(Math.random() * this.images.length);
+      return this.images[randomIndex];
+    },
+  },
 }
 </script>
 
@@ -30,7 +45,7 @@ export default {
             </div>
             
 
-                <img class="jumbs" src="../../public/img/02_Landing-Page.jpg" alt="">
+                <img class="jumbs" :src="randomImage" alt="">
 
                 <div class="content-img">
                     <h1>Professional development for coaches and leaders</h1>
@@ -158,7 +173,8 @@ header {
                 display: block;
                 position: absolute;
                 bottom: 0;
-                width: 50%;
+                top: 17px;
+                width: 35%;
                 right: 0;
             }
         }
