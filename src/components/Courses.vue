@@ -84,7 +84,7 @@ export default {
 <style scoped lang="scss">
     
     .courses{
-        padding-top: 100px;
+        padding-top: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;

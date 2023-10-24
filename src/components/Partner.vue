@@ -35,12 +35,13 @@ export default {
 
             <div class="img-stats">
                 <img src="/public/img/counter-shape-1-1-1.png" alt="">
+                <p class="orange-text number">6500</p>
+                <span class="orange-plus orange-text"> +</span>
             </div>
 
             <div class="text-stats">
-                <p class="orange-text number">6500</p>
-                <span class="orange-plus orange-text"> +</span>
-                <p class="p-text">Happy Clients</p>
+               
+                <p class="p-text">Students</p>
             </div>
 
         </div>
@@ -50,12 +51,13 @@ export default {
 
             <div class="img-stats">
                 <img src="/public/img/counter-shape-2-1-1.png" alt="">
+                <p class="red-text number">200</p>
+                <span class="red-plus red-text"> +</span>
             </div>
 
             <div class="text-stats">
-                <p class="red-text number">200</p>
-                <span class="red-plus red-text"> +</span>
-                <p class="p-text">Happy Clients</p>
+               
+                <p class="p-text">Online Courses</p>
             </div>
 
         </div>
@@ -65,11 +67,12 @@ export default {
 
             <div class="img-stats">
                 <img src="/public/img/counter-shape-3-1-1.png" alt="">
+                <p class="green-text number">100</p>
+                <span class="percentage green-text"> %</span>
+
             </div>
 
             <div class="text-stats">
-                <p class="green-text number">100</p>
-                <span class="percentage green-text"> %</span>
                 <p class="p-text">Happy Clients</p>
             </div>
            
@@ -110,17 +113,18 @@ export default {
 
     .card-container{
 
-        width: 1200px;
+        width: 1100px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-top: 70px;
         .card{
             margin-top: 0px;
-            width: 30%;
+            width: 32%;
             height: fit-content;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
             text-align: center;
             box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.07);
@@ -144,7 +148,6 @@ export default {
     
 
     .card-left{
-        margin-left: 40px;
         cursor: pointer;
     }
     .card-left:hover h4{
@@ -162,7 +165,6 @@ export default {
         transition: 0.3s;
     }
     .card-right{
-        margin-right: 40px;
         cursor: pointer;
     }
     .card-right:hover h4{
@@ -176,12 +178,21 @@ export default {
 
 
     .course-stats{
-        width: 1100px;
+        width: 1150px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        margin-top: 70px;
+        margin-left: 100px;
     }
 
     .statistic {
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         p.number{
             font-family: 'Nunito Sans', sans-serif;
             font-size: 2.5rem;
@@ -190,24 +201,29 @@ export default {
         .img-stats{
             position: relative;
             width: 90px;
-            right: 100%;
-            top: 80%;
+            right: 33%;
+            top: 86%;
+            p.number{
+                // right: 123%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            span{
+                // right: 85%;
+                position: absolute;
+                top: -3px;
+                left: 100px;
+            }
         }
         .text-stats{
             display: flex;
-            position: absolute;
-            p.number{
-                right: 123%;
-                position: absolute;
-            }
-            span{
-                right: 85%;
-                position: absolute;
-            }
             p.p-text{
                 font-size: 1.2rem;
                 line-height: 2.5;
-                margin-left: 30px;
+                margin-left: -80px;
+                margin-top: -15px;
+                font-weight: bold;
             }
                 
             
@@ -215,6 +231,7 @@ export default {
     }
     .orange-text {
         color: #F28202;
+        
      }
      .orange-plus {
          font-size: 3.2rem;
@@ -227,6 +244,7 @@ export default {
      .red-plus {
          font-size: 3.2rem;
          font-weight: 400;
+         margin-left: -20px;
      }
 
      .green-text {
@@ -235,5 +253,6 @@ export default {
 
      .percentage {
         font-size: 2.8rem;
+        margin-left: -20px;
      }
 </style>

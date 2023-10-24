@@ -147,8 +147,10 @@ header {
             transition: 0.3s;
 
             &:hover{
-                text-decoration: underline 2px;
+                text-decoration-line:underline;
                 text-decoration-color: #D74d52;
+                text-decoration-thickness: 2px;
+                text-decoration-skip-ink:calc(50% - 2px);
                 color: #D74d52;
 
             }
